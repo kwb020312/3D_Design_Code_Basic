@@ -8,18 +8,29 @@ import Box from "./components/Box";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import AnimatedSphere from "./components/AnimatedSphere";
 
 export default function App() {
   return (
     <Wrapper className="App">
       <Background />
       <TextSection />
+      {/* Box */}
       <Canvas className="canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.5} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
           <Box />
+        </Suspense>
+      </Canvas>
+      {/* Sphere */}
+      <Canvas className="canvas">
+        <OrbitControls enableZoom={false} />
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[-2, 5, 2]} intensity={1} />
+        <Suspense fallback={null}>
+          <AnimatedSphere />
         </Suspense>
       </Canvas>
     </Wrapper>
