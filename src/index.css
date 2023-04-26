@@ -1,8 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "spoqa";
   src: url(src/assets/font/SpoqaHanSansNeo-Medium.ttf);
 }
 
+.App {
+  text-align: center;
+}
+
 * {
   font-family: "spoqa";
+  margin: 0;
 }
