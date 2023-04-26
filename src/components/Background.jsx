@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-import mountain1 from "../images/mountain1.svg";
-import mountain2 from "../images/mountain2.svg";
-import mountain3 from "../images/mountain3.svg";
-import mountain4 from "../images/mountain4.svg";
-import mountain5 from "../images/mountain5.svg";
-import heroWave from "../images/hero-wave.svg";
-import blurLayer from "../images/blur-layer.webp";
+import mountain1 from "../assets/images/mountain1.svg";
+import mountain2 from "../assets/images/mountain2.svg";
+import mountain3 from "../assets/images/mountain3.svg";
+import mountain4 from "../assets/images/mountain4.svg";
+import mountain5 from "../assets/images/mountain5.svg";
+import heroWave from "../assets/images/hero-wave.svg";
+import blurLayer from "../assets/images/blur-layer.webp";
 
 export default function HeroBackground() {
   return (
