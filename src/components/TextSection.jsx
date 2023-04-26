@@ -3,9 +3,9 @@ import styled from "styled-components";
 export default function TextSection() {
   return (
     <Wrapper>
-      <Title>Three.js in React</Title>
+      <Title>React에서 Three.JS 활용하기</Title>
       <Description>
-        Bring your website to life with beautiful 3D objects
+        3D 오브젝트를 활용하여 시각적인 웹 사이트 구축하기
       </Description>
     </Wrapper>
   );

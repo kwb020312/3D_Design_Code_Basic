@@ -11,7 +11,9 @@ export default function App() {
     <Wrapper className="App">
       <Background />
       <TextSection />
-      <Canvas>
+      <Canvas className="canvas">
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Box />
       </Canvas>
     </Wrapper>
@@ -21,4 +23,8 @@ export default function App() {
 const Wrapper = styled.div`
   position: relative;
   background: #1f1144;
+
+  canvas {
+    height: 500px;
+  }
 `;
