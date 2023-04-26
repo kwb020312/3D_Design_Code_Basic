@@ -1,5 +1,25 @@
 # 3D Design Code
 
+## GLTF 2.0으로 변환하는 과정
+
+기존 GLTF는 JS로 사용하기에 무겁거나, 랜더링이 잘 되지 않는 경우가 생길 수 있음
+
+> gltf-pipeline을 전역으로 설치하여 변환 라이브러리를 설치한다.
+
+```
+npm install -g gltf-pipline
+```
+
+GLTF파일이 있는 경로로 이동하여 다음 명령 실행
+
+> gltf-pipeline -i (대상.gltf) -o (추출될.gltf) -d
+
+이렇게 GLTF 2.0을 생성하고 필요에 따라 GLTF 파일을 JSX로 변환하고 싶은 경우
+
+> npx gltfjsx (추출된.gltf)
+
+를 입력하여 변환이 가능하다.
+
 3D의 기본 요소는 아래와 같음
 
 ### 장면

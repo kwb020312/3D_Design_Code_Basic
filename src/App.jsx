@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Background from "./components/Background";
 import TextSection from "./components/TextSection";
 import Box from "./components/Box";
+import Iphone from "./components/Iphone";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -33,6 +34,15 @@ export default function App() {
           <AnimatedSphere />
         </Suspense>
       </Canvas>
+      {/* Iphone */}
+      <Canvas className="canvas2">
+        <OrbitControls enableZoom={false} />
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[-2, 5, 2]} intensity={1} />
+        <Suspense fallback={null}>
+          <Iphone />
+        </Suspense>
+      </Canvas>
     </Wrapper>
   );
 }
@@ -42,6 +52,6 @@ const Wrapper = styled.div`
   background: #1f1144;
 
   canvas {
-    height: 500px;
+    height: 1000px;
   }
 `;
