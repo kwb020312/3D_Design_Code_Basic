@@ -13,8 +13,8 @@ import { useGLTF } from "@react-three/drei";
 export default function Iphone(props) {
   const { nodes, materials } = useGLTF("/iphone.gltf");
   return (
-    <group {...props} dispose={null}>
-      <group scale={0.2}>
+    <group {...props} dispose={null} position={[0, -2, 0]}>
+      <group scale={0.3}>
         <mesh
           geometry={nodes.UCttAeyROPsgmix.geometry}
           material={materials.KtvhjlxyToKjYkE}

@@ -52,6 +52,6 @@ const Wrapper = styled.div`
   background: #1f1144;
 
   canvas {
-    height: 1000px;
+    height: 500px;
   }
 `;
