@@ -1,5 +1,10 @@
 # 3D Design Code
 
+[3D 기본구축 웹에서 확인하기!](https://3-d-design-code-basic.vercel.app/)
+
+![image](https://user-images.githubusercontent.com/46777310/234600910-aedfe671-3204-41a4-8a9b-94266dd253de.png)
+
+
 ## GLTF 2.0으로 변환하는 과정
 
 기존 GLTF는 JS로 사용하기에 무겁거나, 랜더링이 잘 되지 않는 경우가 생길 수 있음
